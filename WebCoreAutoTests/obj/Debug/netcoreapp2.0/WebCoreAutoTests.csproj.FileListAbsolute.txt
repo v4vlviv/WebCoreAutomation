@@ -1,0 +1,14 @@
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.pdb
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\WebCoreAutoTests.deps.json
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\WebCoreAutoTests.runtimeconfig.json
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\WebCoreAutoTests.runtimeconfig.dev.json
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\WebCoreAutoTests.dll
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\WebCoreAutoTests.pdb
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.csproj.CoreCompileInputs.cache
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.AssemblyInfoInputs.cache
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.AssemblyInfo.cs
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.dll
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.pdb
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.csprojAssemblyReference.cache
