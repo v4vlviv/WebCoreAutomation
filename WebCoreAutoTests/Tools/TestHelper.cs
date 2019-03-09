@@ -18,8 +18,13 @@ namespace WebCoreAutoTests.Tools
     {
         public static readonly int TIMESPAN = 20;
         public static readonly int TIMEWAIT = 10;
-        public virtual string URL(string fullUrl) => $"http://kil777.westus.azurecontainer.io/{fullUrl}";
+        public static readonly string URL = $"http://kil777.westus.azurecontainer.io/";
         BrowserType _browserType;
+
+        public TestHelper(BrowserType browserType)
+        {
+            _browserType = browserType;
+        }
 
         [OneTimeSetUp]
         protected void OneTimeSetup()
@@ -30,12 +35,12 @@ namespace WebCoreAutoTests.Tools
         [SetUp]
         protected virtual void SetUp()
         {
-            var browserType = TestContext.Parameters.Get("Browser", "Firefox");
+            //var browserType = TestContext.Parameters.Get("Browser", "Firefox");
             //Parse the browser Type, since its Enum
-            _browserType = (BrowserType)Enum.Parse(typeof(BrowserType), browserType);
+            //_browserType = (BrowserType)Enum.Parse(typeof(BrowserType), browserType);
             //Pass it to browser
             Initialization(_browserType);
-            driver.Navigate().GoToUrl(URL(""));
+            driver.Navigate().GoToUrl(URL);
         }
 
         [TearDown]
@@ -72,12 +77,27 @@ namespace WebCoreAutoTests.Tools
             {
                 case BrowserType.Chrome:
                     {
-                        driver = new ChromeDriver();
+                        try
+                        {
+                            driver = new ChromeDriver();
+                        }
+                        catch (Exception)
+                        {
+                            driver = new ChromeDriver(".");
+                        }
                         break;
+
                     }
                 case BrowserType.Firefox:
                     {
-                        driver = new FirefoxDriver();
+                        try
+                        {
+                            driver = new FirefoxDriver();
+                        }
+                        catch (Exception)
+                        {
+                            driver = new FirefoxDriver(".");
+                        }                        
                         break;
                     }
                 case BrowserType.Opera:

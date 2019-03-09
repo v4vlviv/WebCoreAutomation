@@ -11,13 +11,15 @@ namespace WebCoreAutoTests.Pages.NonLoginUserPages
         IWebElement title => driver.FindElement(By.XPath("//h2[text()='Log in']"));
         IWebElement login => driver.FindElement(By.Id("Input_Email"));
         IWebElement password => driver.FindElement(By.Id("Input_Password"));
-        IWebElement buttonLogin => driver.FindElement(By.Id("//button[text()='Log in']"));
+        IWebElement buttonLogin => driver.FindElement(By.XPath("//button[text()='Log in']"));
+        IWebElement butLogin => driver.FindElement(By.XPath("//a[text()='Log in']"));
 
 
         public HomePage Login()
         {
+            butLogin.Click();
             login.SendKeys("test@test.com");
-            password.SendKeys("Test1234$");
+            password.SendKeys("Test1234%");
             buttonLogin.Click();
             return new HomePage();
         }

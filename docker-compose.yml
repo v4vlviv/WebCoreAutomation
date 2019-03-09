@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webcoreautotests:
+    image: ${DOCKER_REGISTRY}webcoreautotests
+    build:
+      context: .
+      dockerfile: WebCoreAutoTests/Dockerfile

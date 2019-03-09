@@ -13,7 +13,8 @@ namespace WebCoreAutoTests.Tests
     {
         LoginPage loginPage;
         HomePage homePage;
-        string partUrl = "/Account/Login";
+
+        public LoginPageTest() : base(BrowserType.Firefox) { }
 
         [SetUp]
         protected override void SetUp()
@@ -23,9 +24,9 @@ namespace WebCoreAutoTests.Tests
         }
 
         [Test]
+        [Parallelizable]
         public void LoginTest()
         {
-            URL("Account/Login");
             string expected = "Hello test@test.com!";
             homePage = loginPage.Login();
             string actual = homePage.VerifyUserName();

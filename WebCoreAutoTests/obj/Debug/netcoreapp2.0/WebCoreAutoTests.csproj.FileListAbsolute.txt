@@ -12,3 +12,5 @@ D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreA
 D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.dll
 D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.pdb
 D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\obj\Debug\netcoreapp2.0\WebCoreAutoTests.csprojAssemblyReference.cache
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\chromedriver.exe
+D:\C#\Project\WebCoreAutoTests\WebCoreAutoTests\bin\Debug\netcoreapp2.0\geckodriver.exe
