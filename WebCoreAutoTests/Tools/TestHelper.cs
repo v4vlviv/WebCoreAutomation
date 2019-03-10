@@ -79,7 +79,10 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            driver = new ChromeDriver();
+                            DesiredCapabilities cap = DesiredCapabilities.Chrome();
+                            cap.Setcapability("version", "");
+                            cap.Setcapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"), cap);
                         }
                         catch (Exception)
                         {
@@ -92,7 +95,10 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            driver = new FirefoxDriver();
+                                                        DesiredCapabilities cap = DesiredCapabilities.Firefox();
+                            cap.Setcapability("version", "");
+                            cap.Setcapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4578/wd/hub"), cap);
                         }
                         catch (Exception)
                         {
