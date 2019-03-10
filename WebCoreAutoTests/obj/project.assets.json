@@ -1674,11 +1674,10 @@
   },
   "libraries": {
     "Microsoft.CodeCoverage/16.0.1": {
-      "sha512": "W7WI3iH6At2I/9x2ODgCIIMO0QfpA7ZCoHkeygMLAaz3Nms/GsugKz9N4hkTve2Lj66g2K4CAmbwe6utEH66lw==",
+      "sha512": "HEdO9Lyje8ehjMU985e6vZFETAv337R7wukZXng35hhVdTDoSs3OLC/h5guQWhdDyQ+cN9uKUTK3H1GUKTjrYA==",
       "type": "package",
       "path": "microsoft.codecoverage/16.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
@@ -1767,11 +1766,10 @@
       ]
     },
     "Microsoft.DotNet.InternalAbstractions/1.0.0": {
-      "sha512": "AAguUq7YyKk3yDWPoWA8DrLZvURxB/LrDdTn1h5lmPeznkFUpfC3p459w5mQYQE0qpquf/CkSQZ0etiV5vRHFA==",
+      "sha512": "S8f3mnSN4yNYafvMEuZKz3VSSv49BQahI6Ibmx9ryuc+7EQ3QsTt4rSvrazwoX2qcLhkPpDV/wLW7yDK6nyuFA==",
       "type": "package",
       "path": "microsoft.dotnet.internalabstractions/1.0.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/Microsoft.DotNet.InternalAbstractions.dll",
         "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll",
@@ -1805,11 +1803,10 @@
       ]
     },
     "Microsoft.NET.Test.Sdk/16.0.1": {
-      "sha512": "ON7UIMIhAwrYb0ep+3ztoWVGvtfo88IhiHVnbyOiuVsi8bOMCdMPVcR+EX1WYGgKAd030pHRaxazMlkQ6uDyJQ==",
+      "sha512": "DaUwam5OX68Roubcr76OQ8Cb9Rkq5BOL3/NUtgFWfqJ+9ceiLqtvOClgobx1HTNhKZ62driQUikqv++vnSs4mA==",
       "type": "package",
       "path": "microsoft.net.test.sdk/16.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "build/net40/Microsoft.NET.Test.Sdk.props",
         "build/net40/Microsoft.NET.Test.Sdk.targets",
@@ -2139,12 +2136,10 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "CCf4NjmDOoise7FAij2VPuHIgKKsu696vkTwhOkPVQfLsTmB2WLFfQ4yeO5Udtk8FD636UBMx6Y9eovzJKT76A==",
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -2169,11 +2164,10 @@
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/16.0.1": {
-      "sha512": "AIQ9azu2b31R8nOuFnR32d7cdWidjjLl1dFyLC3LNifzAJoEdCUgkHWUpTTHKWcHhwa9E/NRcdzVple8pbKJ9Q==",
+      "sha512": "1ykjZOmcCtiACoxbn23FjpEvd/6ZtdG1acL65G/vShN05sjg6LcOV2yS8xuJIZZLIPSoRmzUPfypLR7+E4f0qw==",
       "type": "package",
       "path": "microsoft.testplatform.objectmodel/16.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/Microsoft.TestPlatform.CoreUtilities.dll",
         "lib/net451/Microsoft.TestPlatform.PlatformAbstractions.dll",
@@ -2241,11 +2235,10 @@
       ]
     },
     "Microsoft.TestPlatform.TestHost/16.0.1": {
-      "sha512": "H4bYjOjkK4FYQ23RnsHm8FcqR0te8Eky9i9sS1IjVFBlDh1MU7aIwmBUpKpaSAy5xNu7UTHku4RZTWzWHDzS7g==",
+      "sha512": "KnnRkF7TljjTl8Mtv8kankP+b66HkiKlAa9JtViF8DYofKCq7UZTMAzP2uGdhNGxloRs/jQMcAaFw46Zx9LioA==",
       "type": "package",
       "path": "microsoft.testplatform.testhost/16.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "build/uap10.0/Microsoft.TestPlatform.TestHost.props",
@@ -2424,11 +2417,11 @@
       ]
     },
     "Microsoft.Win32.Registry/4.3.0": {
-      "sha512": "Lw1/VwLH1yxz6SfFEjVRCN0pnflLEsWgnV4qsdJ512/HhTwnKXUG+zDQ4yTO3K/EJQemGoNaBHX5InISNKTzUQ==",
+      "sha512": "OHAvcu6tVh40PncTYFkpLItsw9O8sUc59C4eqSqEd+U5rY7t0+u7Xoi6Mw2QOfvPJ2HUJlwIEVqxklDIfn757Q==",
       "type": "package",
       "path": "microsoft.win32.registry/4.3.0",
       "files": [
-        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net46/Microsoft.Win32.Registry.dll",
@@ -2581,12 +2574,10 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "sha512": "MoATFm6YJyk5OdqDdxDWfKe5dkY3Cygu0wrpKPH/LbWtMmSuD/3G/JIInt9sIJN7hKQOFYCIb2UjLc2vO5byQQ==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -2611,11 +2602,10 @@
       ]
     },
     "NUnit/3.11.0": {
-      "sha512": "BzGk+u02RCrysmLlSzD+okxzMQ8JRF4eFC/qijDJ8Y/FBdTrTkxkQyTFsYkG1o++pr7QpFAE4VDXDqIfZ/gBAg==",
+      "sha512": "zecrYxUA5p5w8AZ2bvbBbiUIcrQnZAVPrziNMSWMdcOi0D2Oe7yKUNivWPIQMcUwQDHmWtS/ijnD48ubU/eHZQ==",
       "type": "package",
       "path": "nunit/3.11.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "CHANGES.md",
         "LICENSE.txt",
@@ -2645,12 +2635,10 @@
       ]
     },
     "NUnit.ConsoleRunner/3.9.0": {
-      "sha512": "BXFdpEBTpBwK4PsDyjwCn1s0o1LdEFet2VATl5Z4iMitjSq/cVQpnAwjkQAJ0aIhdMqtYx/xbmmFCl4OGpa7eQ==",
+      "sha512": "WFrAd1gEpe6v7KZxlV0vhP6r1DJ4ttFrBXXkw0QGJ7OKiLI9vcqNTHQC67cs6W3FBBM84rNUJ5q2+GiL+my1tQ==",
       "type": "package",
       "path": "nunit.consolerunner/3.9.0",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "CHANGES.txt",
         "LICENSE.txt",
@@ -2671,12 +2659,10 @@
       ]
     },
     "NUnit.Extension.NUnitProjectLoader/3.5.0": {
-      "sha512": "oe+PYd5uf0u3WoV6txz6esPe5I9I3PV0o96KoEVvJs+AYMG9MCebmnMq7N8dYJrWiDKIuSDwZ6WTs84XTDZ/Pw==",
+      "sha512": "tJlcR8v7mbxjop5maZZ5BmjBL3ceDb5sibC5VX2cLDDuzs2hnXxTYNEouh0OBdhdmSY23uqA3H7j9LpM0gIVQw==",
       "type": "package",
       "path": "nunit.extension.nunitprojectloader/3.5.0",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "nunit.extension.nunitprojectloader.3.5.0.nupkg.sha512",
         "nunit.extension.nunitprojectloader.nuspec",
@@ -2684,12 +2670,10 @@
       ]
     },
     "NUnit.Extension.NUnitV2Driver/3.6.0": {
-      "sha512": "TZIWwZaND/91p9FCuZH0vJLNPVyFV4No6XHgtd2ZLwN6MQZVPWdI4apL38ejsKAFn3nF1yTlvJgYF1l2mlo8wA==",
+      "sha512": "guQVShKZUgsOrCOLatR0bt0HlETZmJ+B38Z8ZiTxB6jg9VPHHeyFlsTZBCqSak2KYLvi8UFl14vCq1dIQVDanw==",
       "type": "package",
       "path": "nunit.extension.nunitv2driver/3.6.0",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "nunit.extension.nunitv2driver.3.6.0.nupkg.sha512",
@@ -2701,12 +2685,10 @@
       ]
     },
     "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
-      "sha512": "qz5Xxd+yBStdMP/jIIFz01cN3x8rKBCoF3alFHa5Gr+lZqdFyV1DN+3l8AlHrDSX5OzAz+T5CCBkgDim/hqGkQ==",
+      "sha512": "XKULYMnMtOF2KgK4XD5rx9T2JtcAyrTbq6+z3F33deTB3D60j8aTvFL5KkYFdVAMigqT573NU8WjnxCnBoOrgQ==",
       "type": "package",
       "path": "nunit.extension.nunitv2resultwriter/3.5.0",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "nunit.extension.nunitv2resultwriter.3.5.0.nupkg.sha512",
         "nunit.extension.nunitv2resultwriter.nuspec",
@@ -2714,12 +2696,10 @@
       ]
     },
     "NUnit.Extension.TeamCityEventListener/1.0.3": {
-      "sha512": "Xl/ISHoJMbQHxpfa06KELaSU46V+KjofeZHAPmlb6ohw4HmmzRp+Hk7vkJPZtNyTrKZbqutefOSMKpnkgEl8tA==",
+      "sha512": "1SjylKnGLQDyllMHbj+b+HWqmFy5hnIFGXGiNXz3ZbSqaZmuyfO6p2aq/8BouzFnVSO28cMTrIgj01M94puC1Q==",
       "type": "package",
       "path": "nunit.extension.teamcityeventlistener/1.0.3",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "CHANGES.txt",
         "LICENSE.txt",
@@ -2729,12 +2709,10 @@
       ]
     },
     "NUnit.Extension.VSProjectLoader/3.8.0": {
-      "sha512": "CIScV9a7+wUu6Ylb+WO0q/WGWQVoB05TUj3XZHa1CO+2BInDdfIVkqtlrSguhy6D/AGIMaLVrCZpQkQ2m0bbzQ==",
+      "sha512": "BwD/qg+4mRfwsoAGquAc//lnWyJJmo/+hGolhZZ3o6NiGo2Tgk2uAkpcO56DAMRaHVIrNBokH8UkYyDsmNvqoQ==",
       "type": "package",
       "path": "nunit.extension.vsprojectloader/3.8.0",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "CHANGES.txt",
         "LICENSE.txt",
@@ -2744,22 +2722,20 @@
       ]
     },
     "NUnit.Runners/3.9.0": {
-      "sha512": "Q/hLN8iNHjp+j+BfnFBDMAESnwS0lTrm1CtGnJWaVLkRZgS9QiY4kBBn3hpsiiMlT5cC3CPmYYK0OY76HKj+3A==",
+      "sha512": "/iPkhcOFYq/mRRs45PN3FNdmILzt0pjP7KVqY9Pi8y/wH6p7IwEuZZMvoS5iWqef8d+BqcgpNiVf46EqQZJROQ==",
       "type": "package",
       "path": "nunit.runners/3.9.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "nunit.runners.3.9.0.nupkg.sha512",
         "nunit.runners.nuspec"
       ]
     },
     "NUnit3TestAdapter/3.13.0": {
-      "sha512": "9OlA81APTyR/tNkapK2a2dlz4jFra7/Bm1eYT1P1lIq2cJv4OYtWD5uHj3XsO1dz3btiwbIFrWBtZNr/ebRhSw==",
+      "sha512": "A3L418IOAk9KrBQKPcgiDAPuriNB6wiZnGRmms1B8BQufPg7J9V4Mmu/G53cmcg3B2K4wWhkLbOB6TtBLd/7jw==",
       "type": "package",
       "path": "nunit3testadapter/3.13.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "build/net35/NUnit3.TestAdapter.dll",
@@ -2788,11 +2764,10 @@
       ]
     },
     "Selenium.Firefox.WebDriver/0.23.0": {
-      "sha512": "0kMAOPIm5Hbvr6yGr9bItBDld4+8V4PiBJOnGVvOuEfOzKrF4kUlF1zUmb8BJ3W4D/JfPAJEr+BOJx0tf7Q00Q==",
+      "sha512": "gMrlM1ntaZtgw4rvhl9IPmPBXzsVh+CeWHJ3IT1ckjZpJi9t2EnPAJEqVTnLiMA4bnnSO314q8nnO+EL3+RXJA==",
       "type": "package",
       "path": "selenium.firefox.webdriver/0.23.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "build/Selenium.Firefox.WebDriver.targets",
         "driver/geckodriver.exe",
@@ -2801,11 +2776,10 @@
       ]
     },
     "Selenium.Support/3.141.0": {
-      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
+      "sha512": "ov2XBE48L1M2bTc8azz5rSpfT45+q6bw9sBc84NObGebFZ/S2SCnV/TSoBy2Zf3vPXij63Nd1VRcwQkyKC4Vyw==",
       "type": "package",
       "path": "selenium.support/3.141.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/WebDriver.Support.dll",
         "lib/net35/WebDriver.Support.xml",
@@ -2820,11 +2794,10 @@
       ]
     },
     "Selenium.WebDriver/3.141.0": {
-      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+      "sha512": "ymXPJ9zp7KPIV0H6DdI3boIwc46LrEW1T653Ow6OsRbMFgyDcqRCX8JOeYLm68jIq+7rgECLLUXxmAit5TP/Iw==",
       "type": "package",
       "path": "selenium.webdriver/3.141.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/WebDriver.dll",
         "lib/net35/WebDriver.xml",
@@ -3170,11 +3143,10 @@
       ]
     },
     "System.ComponentModel.EventBasedAsync/4.3.0": {
-      "sha512": "fCFl8f0XdwA/BuoNrVBB5D0Y48/hv2J+w4xSDdXQitXZsR6UCSOrDVE7TCUraY802ENwcHUnUCv4En8CupDU1g==",
+      "sha512": "SXx4bOoSfWE1TIq7RyY7GhIL8W1ueW+xHQApV7bkWs42eDZUwfPgct5tv3jZkWRkvQ8JjWF1ab1d1lFwqYPE+Q==",
       "type": "package",
       "path": "system.componentmodel.eventbasedasync/4.3.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -3277,11 +3249,10 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
-        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3395,11 +3366,11 @@
       ]
     },
     "System.Diagnostics.Process/4.3.0": {
-      "sha512": "J0wOX07+QASQblsfxmIMFc9Iq7KTXYL3zs2G/Xc704Ylv3NpuVdo6gij6V3PGiptTxqsK0K7CdXenRvKUnkA2g==",
+      "sha512": "gFvIaiWxt33En3oUVkzSYUzKoOm8abV8IbM53HPOfLZBLD9yRdDxvqRihK/1ySRkFp5NZIXd4cYWsY0ybnvANg==",
       "type": "package",
       "path": "system.diagnostics.process/4.3.0",
       "files": [
-        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5767,11 +5738,10 @@
       ]
     },
     "System.Xml.XPath.XmlDocument/4.3.0": {
-      "sha512": "A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
+      "sha512": "91tvfHWHSrYFPolCwWYqbpo1YaoBUCQ3uNZ/O/zr0ev5BnkoATJoie16ywlMVUaXZtfSfNELxhtG3aqpTfwR4w==",
       "type": "package",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -5818,28 +5788,30 @@
     ]
   },
   "packageFolders": {
-    "/home/evey/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Lucky\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/evey/Desktop/WebCoreAutomation/WebCoreAutoTests/WebCoreAutoTests.csproj",
+      "projectUniqueName": "D:\\C#\\Project\\WebCoreAutoTests\\WebCoreAutoTests\\WebCoreAutoTests.csproj",
       "projectName": "WebCoreAutoTests",
-      "projectPath": "/home/evey/Desktop/WebCoreAutomation/WebCoreAutoTests/WebCoreAutoTests.csproj",
-      "packagesPath": "/home/evey/.nuget/packages/",
-      "outputPath": "/home/evey/Desktop/WebCoreAutomation/WebCoreAutoTests/obj/",
+      "projectPath": "D:\\C#\\Project\\WebCoreAutoTests\\WebCoreAutoTests\\WebCoreAutoTests.csproj",
+      "packagesPath": "C:\\Users\\Lucky\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\Project\\WebCoreAutoTests\\WebCoreAutoTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/evey/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Lucky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5861,7 +5833,6 @@
             "version": "[16.0.1, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

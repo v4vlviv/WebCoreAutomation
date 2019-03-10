@@ -4,6 +4,7 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Firefox;
 using System;
+using OpenQA.Selenium.Remote;
 
 namespace WebCoreAutoTests.Tools
 {
@@ -79,9 +80,9 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            DesiredCapabilities cap = DesiredCapabilities.Chrome();
-                            cap.Setcapability("version", "");
-                            cap.Setcapability("platform", "LINUX");
+                            FirefoxOptions cap = new FirefoxOptions();
+                            cap.AddAdditionalCapability("version", "");
+                            cap.AddAdditionalCapability("platform", "LINUX");
                             driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"), cap);
                         }
                         catch (Exception)
@@ -95,10 +96,9 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                                                        DesiredCapabilities cap = DesiredCapabilities.Firefox();
-                            cap.Setcapability("version", "");
-                            cap.Setcapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4578/wd/hub"), cap);
+                            ChromeOptions options = new ChromeOptions();
+                            options.PlatformName = "LINUX";
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4578/wd/hub"), options);
                         }
                         catch (Exception)
                         {
