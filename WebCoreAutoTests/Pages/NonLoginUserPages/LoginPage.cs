@@ -18,7 +18,7 @@ namespace WebCoreAutoTests.Pages.NonLoginUserPages
         public HomePage Login()
         {
             butLogin.Click();
-            login.SendKeys("test@test.com");
+            login.SendKeys("test@testfromcode.com");
             password.SendKeys("Test1234%");
             buttonLogin.Click();
             return new HomePage();
