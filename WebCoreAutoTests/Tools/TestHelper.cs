@@ -83,7 +83,7 @@ namespace WebCoreAutoTests.Tools
                             FirefoxOptions options = new FirefoxOptions();
                             options.AddAdditionalCapability("version", "");
                             options.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"),
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"),
                                 options);
                         }
                         catch (Exception)
@@ -100,7 +100,7 @@ namespace WebCoreAutoTests.Tools
                             ChromeOptions options = new ChromeOptions();
                             options.PlatformName = "LINUX";
                             options.BrowserVersion = "";
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4578/wd/hub"), options);
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), options);
                         }
                         catch (Exception)
                         {
