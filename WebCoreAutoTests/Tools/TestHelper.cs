@@ -80,11 +80,11 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            //FirefoxOptions options = new FirefoxOptions();
-                            //options.AddAdditionalCapability("version", "");
-                            //options.AddAdditionalCapability("platform", "LINUX");
+                            FirefoxOptions options = new FirefoxOptions();
+                            options.AddAdditionalCapability("version", "");
+                            options.AddAdditionalCapability("platform", "LINUX");
                             driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"),
-                                new FirefoxOptions());
+                                options);
                         }
                         catch (Exception)
                         {
