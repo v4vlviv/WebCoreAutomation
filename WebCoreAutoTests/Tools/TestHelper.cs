@@ -80,14 +80,14 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            FirefoxOptions cap = new FirefoxOptions();
-                            cap.AddAdditionalCapability("version", "");
-                            cap.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"), cap);
+                            FirefoxOptions options = new FirefoxOptions();
+                            options.AddAdditionalCapability("version", "");
+                            options.AddAdditionalCapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"), options);
                         }
                         catch (Exception)
                         {
-                            driver = new ChromeDriver(".");
+                            //driver = new ChromeDriver(".");
                         }
                         break;
 
@@ -98,11 +98,12 @@ namespace WebCoreAutoTests.Tools
                         {
                             ChromeOptions options = new ChromeOptions();
                             options.PlatformName = "LINUX";
+                            options.BrowserVersion = "";
                             driver = new RemoteWebDriver(new Uri("http://localhost:4578/wd/hub"), options);
                         }
                         catch (Exception)
                         {
-                            driver = new FirefoxDriver(".");
+                            //driver = new FirefoxDriver(".");
                         }                        
                         break;
                     }
