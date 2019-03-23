@@ -1,7 +1,7 @@
 seleniumhub:
     image: selenium/hub
     ports:
-        - 4444:4444
+        - 4445:4445
         
 firefoxnode:
     image: selenium/node-firefox-debug
