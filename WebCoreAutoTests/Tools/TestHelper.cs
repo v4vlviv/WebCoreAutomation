@@ -83,7 +83,7 @@ namespace WebCoreAutoTests.Tools
                             //FirefoxOptions options = new FirefoxOptions();
                             //options.AddAdditionalCapability("version", "");
                             //options.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"),
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"),
                                 new FirefoxOptions());
                         }
                         catch (Exception)
