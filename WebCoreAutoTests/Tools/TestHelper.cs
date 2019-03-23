@@ -46,7 +46,7 @@ namespace WebCoreAutoTests.Tools
 
         [TearDown]
         public void TearDown()
-        {
+        {            
             driver.Quit();
         }
 
@@ -80,10 +80,11 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            FirefoxOptions options = new FirefoxOptions();
-                            options.AddAdditionalCapability("version", "");
-                            options.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"), options);
+                            //FirefoxOptions options = new FirefoxOptions();
+                            //options.AddAdditionalCapability("version", "");
+                            //options.AddAdditionalCapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4577/wd/hub"),
+                                new FirefoxOptions());
                         }
                         catch (Exception)
                         {
