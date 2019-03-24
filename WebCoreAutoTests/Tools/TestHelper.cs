@@ -98,17 +98,10 @@ namespace WebCoreAutoTests.Tools
                         try
                         {
                             FirefoxOptions options = new FirefoxOptions();
-                            options.PlatformName = "LINUX";
+                            options.BrowserExecutableLocation = "/home/ubuntu/Downloads/firefox57/firefox";
+                            options.AddAdditionalCapability("platform", "LINUX", true);
                             options.BrowserVersion = "";
                             driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"), options);
-                            //String driverPath = "/opt/selenium/";
-                            //String driverExecutableFileName = "chromedriver";
-                            //ChromeOptions options = new ChromeOptions();
-                            //options.AddArguments("headless");
-                            //options.AddArguments("no-sandbox");
-                            //options.BinaryLocation = "/opt/google/chrome/chrome";
-                            //ChromeDriverService service = ChromeDriverService.CreateDefaultService(driverPath, driverExecutableFileName);
-                            //driver = new ChromeDriver(service, options, TimeSpan.FromSeconds(30));
                         }
                         catch (Exception)
                         {
