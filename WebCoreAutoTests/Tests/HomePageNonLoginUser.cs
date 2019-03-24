@@ -22,7 +22,7 @@ namespace WebCoreAutoTests.Tests
         }
 
         [Test]
-        [Parallelizable]
+        //[Parallelizable]
         public void VerifyCarouselIsShownCR()
         {
             bool expected = true;
