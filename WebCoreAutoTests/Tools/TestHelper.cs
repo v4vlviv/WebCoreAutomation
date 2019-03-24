@@ -82,13 +82,13 @@ namespace WebCoreAutoTests.Tools
                             ChromeOptions options = new ChromeOptions();
                             options.AddAdditionalCapability("version", "");
                             options.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4444/wd/hub/"),
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32769/wd/hub/"),
                                 options);
                         }
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
-                            driver = new ChromeDriver();                            
+                            //driver = new ChromeDriver();                            
                         }
                         break;
 
@@ -100,7 +100,7 @@ namespace WebCoreAutoTests.Tools
                             FirefoxOptions options = new FirefoxOptions();
                             options.PlatformName = "LINUX";
                             options.BrowserVersion = "";
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4444/wd/hub"), options);
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"), options);
                             //String driverPath = "/opt/selenium/";
                             //String driverExecutableFileName = "chromedriver";
                             //ChromeOptions options = new ChromeOptions();
@@ -113,7 +113,7 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new FirefoxDriver(".");
-                            driver = new FirefoxDriver();
+                            //driver = new FirefoxDriver();
                         }                        
                         break;
                     }
