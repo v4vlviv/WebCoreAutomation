@@ -24,7 +24,7 @@ namespace WebCoreAutoTests.Tests
         }
 
         [Test]
-        //[Parallelizable]
+        [Parallelizable]
         public void LoginTestFF()
         {
             string expected = "Hello test@test.com!";

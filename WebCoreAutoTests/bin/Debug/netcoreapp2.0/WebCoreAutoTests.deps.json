@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "85076962ad8435421fbae5ab146548bc44c39f55"
+    "signature": "85e17462950f3e1dfdb8fd35df7d4a4e3bec83b5"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,8 +13,8 @@
           "NUnit.Runners": "3.9.0",
           "NUnit3TestAdapter": "3.13.0",
           "Selenium.Firefox.WebDriver": "0.23.0",
-          "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "3.141.0"
+          "Selenium.Support": "3.13.1",
+          "Selenium.WebDriver": "3.13.1"
         },
         "runtime": {
           "WebCoreAutoTests.dll": {}
@@ -408,15 +408,15 @@
         }
       },
       "Selenium.Firefox.WebDriver/0.23.0": {},
-      "Selenium.Support/3.141.0": {
+      "Selenium.Support/3.13.1": {
         "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
+          "Selenium.WebDriver": "3.13.1"
         },
         "runtime": {
           "lib/netstandard2.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/3.141.0": {
+      "Selenium.WebDriver/3.13.1": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3"
         },
@@ -1192,19 +1192,19 @@
       "path": "selenium.firefox.webdriver/0.23.0",
       "hashPath": "selenium.firefox.webdriver.0.23.0.nupkg.sha512"
     },
-    "Selenium.Support/3.141.0": {
+    "Selenium.Support/3.13.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ov2XBE48L1M2bTc8azz5rSpfT45+q6bw9sBc84NObGebFZ/S2SCnV/TSoBy2Zf3vPXij63Nd1VRcwQkyKC4Vyw==",
-      "path": "selenium.support/3.141.0",
-      "hashPath": "selenium.support.3.141.0.nupkg.sha512"
+      "sha512": "sha512-Bf/WeM66X09ta+nn0ZucPYafFyZFhb6tzjx0DExJjbFlc9oTw1EK5EMWmSceOW84daRiC6J3GxhbSfnIDTZ5ZA==",
+      "path": "selenium.support/3.13.1",
+      "hashPath": "selenium.support.3.13.1.nupkg.sha512"
     },
-    "Selenium.WebDriver/3.141.0": {
+    "Selenium.WebDriver/3.13.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ymXPJ9zp7KPIV0H6DdI3boIwc46LrEW1T653Ow6OsRbMFgyDcqRCX8JOeYLm68jIq+7rgECLLUXxmAit5TP/Iw==",
-      "path": "selenium.webdriver/3.141.0",
-      "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
+      "sha512": "sha512-mzsHCiGyLOKHQ4sQhJeWwS0GiKoDk86v0w4jMm0ITHgbUUMjdXR6TvRGUm950EQHuaKOz/wiv2WHOL1NrpE5bQ==",
+      "path": "selenium.webdriver/3.13.1",
+      "hashPath": "selenium.webdriver.3.13.1.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

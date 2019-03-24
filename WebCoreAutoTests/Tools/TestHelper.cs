@@ -79,24 +79,14 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            //ChromeOptions options = new ChromeOptions();
-                            //options.AddAdditionalCapability("version", "");
-                            //options.AddAdditionalCapability("platform", "LINUX");
-                            //driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32769/wd/hub/"),
-                            //    options);
-                            var chromeOptions = new ChromeOptions();
-                            chromeOptions.BinaryLocation = "/usr/bin";
-                            chromeOptions.AddArgument("--headless");
-                            driver = new ChromeDriver(chromeOptions);
+                            DesiredCapabilities capabilities = DesiredCapabilities.Chrome();
+                            capabilities.SetCapability("version", "");
+                            capabilities.SetCapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
                         }
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
-
-                            //var chromeOptions = new ChromeOptions();
-                            //chromeOptions.BinaryLocation = "/usr/bin";
-                            //chromeOptions.AddArgument("--headless");
-                            //driver = new ChromeDriver(chromeOptions);
                         }
                         break;
 
@@ -105,16 +95,14 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            FirefoxOptions options = new FirefoxOptions();
-                            options.BrowserExecutableLocation = "/home/ubuntu/Downloads/firefox67/firefox";
-                            options.AddAdditionalCapability("platform", "LINUX", true);
-                            options.BrowserVersion = "67";
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4577/wd/hub"), options);
+                            DesiredCapabilities capabilities = DesiredCapabilities.Firefox();
+                            capabilities.SetCapability("version", "");
+                            capabilities.SetCapability("platform", "LINUX");
+                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
                         }
                         catch (Exception)
                         {
                             //driver = new FirefoxDriver(".");
-                            driver = new FirefoxDriver("/usr/bin");
                         }                        
                         break;
                     }
