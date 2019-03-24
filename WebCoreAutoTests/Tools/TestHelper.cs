@@ -80,9 +80,10 @@ namespace WebCoreAutoTests.Tools
                         try
                         {
                             DesiredCapabilities capabilities = DesiredCapabilities.Chrome();
-                            capabilities.SetCapability("version", "");
-                            capabilities.SetCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
+                            //capabilities.SetCapability("version", "");
+                            //capabilities.SetCapability("platform", "LINUX");
+                            //driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4444/wd/hub/"), capabilities, TimeSpan.FromSeconds(200));
                         }
                         catch (Exception)
                         {
@@ -96,9 +97,10 @@ namespace WebCoreAutoTests.Tools
                         try
                         {
                             DesiredCapabilities capabilities = DesiredCapabilities.Firefox();
-                            capabilities.SetCapability("version", "");
-                            capabilities.SetCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
+                            //capabilities.SetCapability("version", "");
+                            //capabilities.SetCapability("platform", "LINUX");
+                            //driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), capabilities);
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4444/wd/hub/"), capabilities, TimeSpan.FromSeconds(200));
                         }
                         catch (Exception)
                         {
