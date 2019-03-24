@@ -25,7 +25,7 @@ namespace WebCoreAutoTests.Tests
 
         [Test]
         [Parallelizable]
-        public void LoginTestFF()
+        public void LoginTest()
         {
             string expected = "Hello test@test.com!";
             homePage = loginPage.Login();
@@ -34,7 +34,7 @@ namespace WebCoreAutoTests.Tests
         }
 
         [Test]
-        public void VerifyCarouselIsShownLoginPageFF()
+        public void VerifyCarouselIsShown()
         {
             bool expected = true;
             homePage = loginPage.Login();

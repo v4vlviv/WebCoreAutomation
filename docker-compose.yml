@@ -1,8 +1,18 @@
-version: '3.4'
-
-services:
-  webcoreautotests:
-    image: ${DOCKER_REGISTRY}webcoreautotests
-    build:
-      context: .
-      dockerfile: WebCoreAutoTests/Dockerfile
+seleniumhub:
+    image: selenium/hub
+    ports:
+        - 4444:4444
+        
+firefoxnode:
+    image: selenium/node-firefox-debug
+    ports:
+        - 4577
+    links:
+        - seleniumhub:hub
+        
+chromenode:
+    image: selenium/node-chrome-debug
+    ports:
+        - 4578
+    links:
+        - seleniumhub:hub

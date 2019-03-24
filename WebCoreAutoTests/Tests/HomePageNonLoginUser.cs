@@ -23,7 +23,7 @@ namespace WebCoreAutoTests.Tests
 
         [Test]
         [Parallelizable]
-        public void VerifyCarouselIsShownCR()
+        public void VerifyCarouselIsShown()
         {
             bool expected = true;
             bool actual = homePage.CarouselIsExist();
