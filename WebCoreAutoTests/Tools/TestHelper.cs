@@ -98,9 +98,9 @@ namespace WebCoreAutoTests.Tools
                         try
                         {
                             FirefoxOptions options = new FirefoxOptions();
-                            options.BrowserExecutableLocation = "/home/ubuntu/Downloads/firefox57/firefox";
+                            options.BrowserExecutableLocation = "/home/ubuntu/Downloads/firefox67/firefox";
                             options.AddAdditionalCapability("platform", "LINUX", true);
-                            options.BrowserVersion = "57";
+                            options.BrowserVersion = "67";
                             driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4577/wd/hub"), options);
                         }
                         catch (Exception)
