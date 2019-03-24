@@ -106,7 +106,7 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new FirefoxDriver(".");
-                            driver = new FirefoxDriver("/usr/bin/geckodriver");
+                            driver = new FirefoxDriver("/usr/bin");
                         }                        
                         break;
                     }
