@@ -88,7 +88,10 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
-                            driver = new ChromeDriver("/usr/bin");                            
+                            var chromeOptions = new ChromeOptions();
+                            chromeOptions.BinaryLocation = "/usr/bin";
+                            chromeOptions.AddArguments("headless");
+                            driver = new ChromeDriver(chromeOptions);
                         }
                         break;
 
