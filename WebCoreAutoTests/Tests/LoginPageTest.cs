@@ -27,10 +27,10 @@ namespace WebCoreAutoTests.Tests
         [Parallelizable]
         public void LoginTestFF()
         {
-            string expected = "Hello test@test.com!";
+            string expected = "Hello test@testfromcode.com!";
             homePage = loginPage.Login();
             string actual = homePage.VerifyUserName();
-            Assert.That(expected, Is.EqualTo(actual), $"Name should be Hello test@test.com! but was {actual}");
+            Assert.That(actual, Is.EqualTo(expected), $"Name should be Hello test@testfromcode.com! but was {actual}");
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace WebCoreAutoTests.Tests
             bool expected = true;
             homePage = loginPage.Login();
             bool actual = homePage.CarouselIsExist();
-            Assert.That(expected, Is.EqualTo(actual), $"Carousel isn't shown");
+            Assert.That(actual, Is.EqualTo(expected), $"Carousel isn't shown");
         }
     }
 }
