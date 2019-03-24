@@ -106,7 +106,7 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new FirefoxDriver(".");
-                            driver = new FirefoxDriver("export PATH=$PATH:/path-to-extracted-file/geckodriver");
+                            driver = new FirefoxDriver("/usr/bin/geckodriver");
                         }                        
                         break;
                     }
