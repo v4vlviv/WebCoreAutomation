@@ -100,8 +100,8 @@ namespace WebCoreAutoTests.Tools
                             FirefoxOptions options = new FirefoxOptions();
                             options.BrowserExecutableLocation = "/home/ubuntu/Downloads/firefox57/firefox";
                             options.AddAdditionalCapability("platform", "LINUX", true);
-                            options.BrowserVersion = "";
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32768/wd/hub"), options);
+                            options.BrowserVersion = "57";
+                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:4577/wd/hub"), options);
                         }
                         catch (Exception)
                         {
