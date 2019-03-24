@@ -88,6 +88,7 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
+                            driver = new ChromeDriver();
                         }
                         break;
 
@@ -96,14 +97,23 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
+                            //ChromeOptions options = new ChromeOptions();
+                            //options.PlatformName = "LINUX";
+                            //options.BrowserVersion = "";
+                            //driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), options);
+                            String driverPath = "/opt/selenium/";
+                            String driverExecutableFileName = "chromedriver";
                             ChromeOptions options = new ChromeOptions();
-                            options.PlatformName = "LINUX";
-                            options.BrowserVersion = "";
-                            driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), options);
+                            options.AddArguments("headless");
+                            options.AddArguments("no-sandbox");
+                            options.BinaryLocation = "/opt/google/chrome/chrome";
+                            ChromeDriverService service = ChromeDriverService.CreateDefaultService(driverPath, driverExecutableFileName);
+                            driver = new ChromeDriver(service, options, TimeSpan.FromSeconds(30));
                         }
                         catch (Exception)
                         {
                             //driver = new FirefoxDriver(".");
+                            driver = new FirefoxDriver();
                         }                        
                         break;
                     }
