@@ -79,19 +79,24 @@ namespace WebCoreAutoTests.Tools
                     {
                         try
                         {
-                            ChromeOptions options = new ChromeOptions();
-                            options.AddAdditionalCapability("version", "");
-                            options.AddAdditionalCapability("platform", "LINUX");
-                            driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32769/wd/hub/"),
-                                options);
+                            //ChromeOptions options = new ChromeOptions();
+                            //options.AddAdditionalCapability("version", "");
+                            //options.AddAdditionalCapability("platform", "LINUX");
+                            //driver = new RemoteWebDriver(new Uri("http://0.0.0.0:32769/wd/hub/"),
+                            //    options);
+                            var chromeOptions = new ChromeOptions();
+                            chromeOptions.BinaryLocation = "/usr/bin";
+                            chromeOptions.AddArgument("--headless");
+                            driver = new ChromeDriver(chromeOptions);
                         }
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
-                            var chromeOptions = new ChromeOptions();
-                            chromeOptions.BinaryLocation = "/usr/bin";
-                            chromeOptions.AddArguments("headless");
-                            driver = new ChromeDriver(chromeOptions);
+
+                            //var chromeOptions = new ChromeOptions();
+                            //chromeOptions.BinaryLocation = "/usr/bin";
+                            //chromeOptions.AddArgument("--headless");
+                            //driver = new ChromeDriver(chromeOptions);
                         }
                         break;
 
