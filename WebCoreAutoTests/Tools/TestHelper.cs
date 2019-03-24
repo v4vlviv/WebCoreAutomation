@@ -88,7 +88,7 @@ namespace WebCoreAutoTests.Tools
                         catch (Exception)
                         {
                             //driver = new ChromeDriver(".");
-                            //driver = new ChromeDriver();                            
+                            driver = new ChromeDriver("/usr/bin");                            
                         }
                         break;
 
