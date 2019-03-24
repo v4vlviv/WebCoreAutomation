@@ -30,7 +30,7 @@ namespace WebCoreAutoTests.Tests
             string expected = "Hello test@testfromcode.com!";
             homePage = loginPage.Login();
             string actual = homePage.VerifyUserName();
-            Assert.That(actual, Is.EqualTo(expected), $"Name should be Hello test@testfromcode.com! but was {actual}");
+            StringAssert.AreEqualIgnoringCase(expected, actual, $"Name should be Hello test@testfromcode.com! but was {actual}");
         }
 
         [Test]
