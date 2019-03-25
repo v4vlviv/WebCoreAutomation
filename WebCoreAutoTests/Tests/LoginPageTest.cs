@@ -27,19 +27,37 @@ namespace WebCoreAutoTests.Tests
         [Parallelizable]
         public void LoginTestFF()
         {
-            string expected = "Hello test@testfromcode.com!";
-            homePage = loginPage.Login();
-            string actual = homePage.VerifyUserName();
-            StringAssert.AreEqualIgnoringCase(expected, actual, $"Name should be Hello test@testfromcode.com! but was {actual}");
+            try
+            {
+                string expected = "Hello test@testfromcode.com!";
+                homePage = loginPage.Login();
+                string actual = homePage.VerifyUserName();
+                StringAssert.AreEqualIgnoringCase(expected, actual, $"Name should be Hello test@testfromcode.com! but was {actual}");
+            }
+            catch (Exception ex)
+            {
+                test.Fail(ex.StackTrace);
+                test.Fail(ex.Message);
+                isTestSuccess = false;
+            }           
         }
 
         [Test]
         public void VerifyCarouselIsShownFF()
         {
-            bool expected = true;
-            homePage = loginPage.Login();
-            bool actual = homePage.CarouselIsExist();
-            Assert.That(actual, Is.EqualTo(expected), $"Carousel isn't shown");
+            try
+            {
+                bool expected = true;
+                homePage = loginPage.Login();
+                bool actual = homePage.CarouselIsExist();
+                Assert.That(actual, Is.EqualTo(expected), $"Carousel isn't shown");
+            }
+            catch (Exception ex)
+            {
+                test.Fail(ex.StackTrace);
+                test.Fail(ex.Message);
+                isTestSuccess = false;
+            }
         }
     }
 }
