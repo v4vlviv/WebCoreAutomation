@@ -47,7 +47,7 @@ namespace WebCoreAutoTests.Tools
         [TearDown]
         public void TearDown()
         {
-            if (!isTestSuccess)
+            if (isTestSuccess)
             {
                 TakeScreenshot();
             }
