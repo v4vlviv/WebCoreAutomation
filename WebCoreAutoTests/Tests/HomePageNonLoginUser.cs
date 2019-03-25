@@ -22,21 +22,12 @@ namespace WebCoreAutoTests.Tests
         }
 
         [Test]
-        [Parallelizable]
+        //[Parallelizable]
         public void VerifyCarouselIsShownCR()
         {
-            try
-            {
-                bool expected = true;
-                bool actual = homePage.CarouselIsExist();
-                Assert.That(expected, Is.EqualTo(actual), $"Carousel isn't shown");
-            }
-            catch (Exception ex)
-            {
-                test.Fail(ex.StackTrace);
-                test.Fail(ex.Message);
-                isTestSuccess = false;
-            }
+            bool expected = true;
+            bool actual = homePage.CarouselIsExist();
+            Assert.That(expected, Is.EqualTo(actual), $"Carousel isn't shown");
         }
     }
 }
