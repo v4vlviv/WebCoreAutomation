@@ -1,14 +1,13 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "8f2a0b17652f299c578251a182c1813006b0bf5c"
+    "signature": "cba7184d783301cbff342539d180479fe7c708f9"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "WebCoreAutoTests/1.0.0": {
         "dependencies": {
-          "ExtentReports": "3.1.3",
           "Microsoft.NET.Test.Sdk": "16.0.1",
           "NUnit": "3.11.0",
           "NUnit.Runners": "3.9.0",
@@ -20,24 +19,6 @@
         },
         "runtime": {
           "WebCoreAutoTests.dll": {}
-        }
-      },
-      "ExtentReports/3.1.3": {
-        "dependencies": {
-          "HtmlAgilityPack": "1.4.9.5",
-          "MongoDB.Bson": "2.4.0",
-          "MongoDB.Driver": "2.4.0",
-          "MongoDB.Driver.Core": "2.4.0",
-          "Newtonsoft.Json": "10.0.3",
-          "RazorEngine": "3.9.0"
-        },
-        "runtime": {
-          "lib/ExtentReports.dll": {}
-        }
-      },
-      "HtmlAgilityPack/1.4.9.5": {
-        "runtime": {
-          "lib/Net45/HtmlAgilityPack.dll": {}
         }
       },
       "Microsoft.CodeCoverage/16.0.1": {
@@ -376,40 +357,6 @@
           }
         }
       },
-      "MongoDB.Bson/2.4.0": {
-        "dependencies": {
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Diagnostics.Process": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.5/MongoDB.Bson.dll": {}
-        }
-      },
-      "MongoDB.Driver/2.4.0": {
-        "dependencies": {
-          "MongoDB.Bson": "2.4.0",
-          "MongoDB.Driver.Core": "2.4.0",
-          "System.Linq.Queryable": "4.0.1"
-        },
-        "runtime": {
-          "lib/netstandard1.5/MongoDB.Driver.dll": {}
-        }
-      },
-      "MongoDB.Driver.Core/2.4.0": {
-        "dependencies": {
-          "MongoDB.Bson": "2.4.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.Diagnostics.TraceSource": "4.0.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Security": "4.0.0",
-          "System.Security.SecureString": "4.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.5/MongoDB.Driver.Core.dll": {}
-        }
-      },
       "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -456,27 +403,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "RazorEngine/3.9.0": {
-        "runtime": {
-          "lib/net45/RazorEngine.dll": {}
-        }
-      },
       "runtime.native.System/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Targets": "1.1.0"
-        }
-      },
-      "runtime.native.System.Net.Http/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Targets": "1.1.0"
-        }
-      },
-      "runtime.native.System.Net.Security/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Targets": "1.1.0"
-        }
-      },
-      "runtime.native.System.Security.Cryptography/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "1.1.0"
         }
@@ -710,13 +637,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Globalization.Calendars/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Globalization": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
       "System.Globalization.Extensions/4.3.0": {
         "dependencies": {
           "System.Globalization": "4.3.0",
@@ -790,99 +710,12 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Linq.Queryable/4.0.1": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
       "System.Memory/4.5.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
-        }
-      },
-      "System.Net.NameResolution/4.0.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Tracing": "4.1.0",
-          "System.Globalization": "4.3.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Principal.Windows": "4.5.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Net.Primitives/4.0.11": {
-        "dependencies": {
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0"
-        }
-      },
-      "System.Net.Security/4.0.0": {
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Diagnostics.Tracing": "4.1.0",
-          "System.Globalization": "4.3.0",
-          "System.Globalization.Extensions": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Claims": "4.0.1",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.OpenSsl": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Security.Cryptography.X509Certificates": "4.1.0",
-          "System.Security.Principal": "4.0.1",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.ThreadPool": "4.3.0",
-          "runtime.native.System": "4.3.0",
-          "runtime.native.System.Net.Security": "4.0.1",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -1059,14 +892,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Runtime.Numerics/4.0.1": {
-        "dependencies": {
-          "System.Globalization": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0"
-        }
-      },
       "System.Runtime.Serialization.Formatters/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1103,152 +928,6 @@
           }
         }
       },
-      "System.Security.Claims/4.0.1": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Security.Principal": "4.0.1"
-        }
-      },
-      "System.Security.Cryptography.Algorithms/4.2.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Runtime.Numerics": "4.0.1",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.Cng/4.2.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.Csp/4.0.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.Encoding/4.0.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.OpenSsl/4.0.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Runtime.Numerics": "4.0.1",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.Cryptography.Primitives/4.0.0": {
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        }
-      },
       "System.Security.Cryptography.ProtectedData/4.5.0": {
         "dependencies": {
           "System.Memory": "4.5.0"
@@ -1263,55 +942,12 @@
           }
         }
       },
-      "System.Security.Cryptography.X509Certificates/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Globalization.Calendars": "4.0.1",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Runtime.Numerics": "4.0.1",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Cng": "4.2.0",
-          "System.Security.Cryptography.Csp": "4.0.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.OpenSsl": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0",
-          "runtime.native.System": "4.3.0",
-          "runtime.native.System.Net.Http": "4.0.1",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
       "System.Security.Permissions/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal/4.0.1": {
-        "dependencies": {
-          "System.Runtime": "4.3.0"
         }
       },
       "System.Security.Principal.Windows/4.5.0": {
@@ -1324,27 +960,6 @@
             "assetType": "runtime"
           },
           "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
-      "System.Security.SecureString/4.0.0": {
-        "dependencies": {
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
             "rid": "win",
             "assetType": "runtime"
           }
@@ -1490,20 +1105,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ExtentReports/3.1.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-H30E7zFRFXMMtdx+oO8f/Zo9Fby9kitFcqIMSpq+4cVGE+oD36lwDcRyGFtRBTovdFla/Jl9yPb4h0Nmtp7hWw==",
-      "path": "extentreports/3.1.3",
-      "hashPath": "extentreports.3.1.3.nupkg.sha512"
-    },
-    "HtmlAgilityPack/1.4.9.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TQg/I4nsCS55G+UzatJCsa8jbUksM18KYn06oHeqG9HdTafoou2GyHzTe/uXhFCdL8bpTM7CGEhR81P7oql+wQ==",
-      "path": "htmlagilitypack/1.4.9.5",
-      "hashPath": "htmlagilitypack.1.4.9.5.nupkg.sha512"
-    },
     "Microsoft.CodeCoverage/16.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1581,27 +1182,6 @@
       "path": "microsoft.win32.registry/4.3.0",
       "hashPath": "microsoft.win32.registry.4.3.0.nupkg.sha512"
     },
-    "MongoDB.Bson/2.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aqicHjuHBeupU+Tfu4fBbNqXrNQoZoVoRnwb64hTx6yhRzEXXcyQV7+reHwsnlrBiSCVkzntCb4GFp39oIngyg==",
-      "path": "mongodb.bson/2.4.0",
-      "hashPath": "mongodb.bson.2.4.0.nupkg.sha512"
-    },
-    "MongoDB.Driver/2.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-mGcdk4IFsI+ixGByVTPu9xJicWBxUKkPxgs7pN1w4OXB3a/o+jkDnsJX8RQxWbKgfrEjK/VG0B2TlgftryETZg==",
-      "path": "mongodb.driver/2.4.0",
-      "hashPath": "mongodb.driver.2.4.0.nupkg.sha512"
-    },
-    "MongoDB.Driver.Core/2.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Un33eEM5IpraNDEhC6ZoujzuCUQby2hyySLkerbfUr3UL4XhWVwx83Ykug0nBLOxi4nCH5Wn755Vv2KWb2T3GA==",
-      "path": "mongodb.driver.core/2.4.0",
-      "hashPath": "mongodb.driver.core.2.4.0.nupkg.sha512"
-    },
     "Newtonsoft.Json/10.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1672,40 +1252,12 @@
       "path": "nunit3testadapter/3.13.0",
       "hashPath": "nunit3testadapter.3.13.0.nupkg.sha512"
     },
-    "RazorEngine/3.9.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DzgEdHNslrS1xdmIUazULE3GbdpfdDUhykdTcRHj6PwYp3bjcLI+gM2MY+3ghX4f3zSiQYJ7Yw/1F1zOMa47sA==",
-      "path": "razorengine/3.9.0",
-      "hashPath": "razorengine.3.9.0.nupkg.sha512"
-    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
-    },
-    "runtime.native.System.Net.Http/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Nh0UPZx2Vifh8r+J+H2jxifZUD3sBrmolgiFWJd2yiNrxO0xTa6bAw3YwRn1VOiSen/tUXMS31ttNItCZ6lKuA==",
-      "path": "runtime.native.system.net.http/4.0.1",
-      "hashPath": "runtime.native.system.net.http.4.0.1.nupkg.sha512"
-    },
-    "runtime.native.System.Net.Security/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pnBEZovOBrJJFp+2ORAs+bYuEQFcO2iYBNbNwRCqzZ9U7Vu66qoTJaekvOGgCyKmslvcevAVLxn7/K9Xc6lwlw==",
-      "path": "runtime.native.system.net.security/4.0.1",
-      "hashPath": "runtime.native.system.net.security.4.0.1.nupkg.sha512"
-    },
-    "runtime.native.System.Security.Cryptography/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
-      "path": "runtime.native.system.security.cryptography/4.0.0",
-      "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
     },
     "Selenium.Firefox.WebDriver/0.23.0": {
       "type": "package",
@@ -1854,13 +1406,6 @@
       "path": "system.globalization/4.3.0",
       "hashPath": "system.globalization.4.3.0.nupkg.sha512"
     },
-    "System.Globalization.Calendars/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-L1c6IqeQ88vuzC1P81JeHmHA8mxq8a18NUBNXnIY/BVb+TCyAaGIFbhpZt60h9FJNmisymoQkHEFSE9Vslja1Q==",
-      "path": "system.globalization.calendars/4.0.1",
-      "hashPath": "system.globalization.calendars.4.0.1.nupkg.sha512"
-    },
     "System.Globalization.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1903,40 +1448,12 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Queryable/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
-      "path": "system.linq.queryable/4.0.1",
-      "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
-    },
     "System.Memory/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ULODiqdq81e9YfQS/GL4P5zgek90jyPykAV4t1Sp4sjID3/Ebi18lbvOKm+81biHR5a5FdFRXSU/JVc6nxr/7A==",
       "path": "system.memory/4.5.0",
       "hashPath": "system.memory.4.5.0.nupkg.sha512"
-    },
-    "System.Net.NameResolution/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tzeTP0r8uMf10LVrbwujDiQSTXNJzjlo2LquRV3b5FHeE2ONwe+EZX9xVmG+KFYaJyFNb2sTNBHA1k1tfSUglw==",
-      "path": "system.net.nameresolution/4.0.0",
-      "hashPath": "system.net.nameresolution.4.0.0.nupkg.sha512"
-    },
-    "System.Net.Primitives/4.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hVvfl4405DRjA2408luZekbPhplJK03j2Y2lSfMlny7GHXlkByw1iLnc9mgKW0GdQn73vvMcWrWewAhylXA4Nw==",
-      "path": "system.net.primitives/4.0.11",
-      "hashPath": "system.net.primitives.4.0.11.nupkg.sha512"
-    },
-    "System.Net.Security/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-e7y/92A7436wJ33VOnUf5XbIlubGgHH7+cODaQkeYwU0xXd/fB/j6KiOdS6VvHcRfBXUYIPsvBOdz3WSNE1siQ==",
-      "path": "system.net.security/4.0.0",
-      "hashPath": "system.net.security.4.0.0.nupkg.sha512"
     },
     "System.ObjectModel/4.3.0": {
       "type": "package",
@@ -2064,13 +1581,6 @@
       "path": "system.runtime.loader/4.0.0",
       "hashPath": "system.runtime.loader.4.0.0.nupkg.sha512"
     },
-    "System.Runtime.Numerics/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+XbKFuzdmLP3d1o9pdHu2nxjNr2OEPqGzKeegPLCUMM71a0t50A/rOcIRmGs9wR7a8KuHX6hYs/7/TymIGLNqg==",
-      "path": "system.runtime.numerics/4.0.1",
-      "hashPath": "system.runtime.numerics.4.0.1.nupkg.sha512"
-    },
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2099,68 +1609,12 @@
       "path": "system.security.accesscontrol/4.5.0",
       "hashPath": "system.security.accesscontrol.4.5.0.nupkg.sha512"
     },
-    "System.Security.Claims/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ReS8CDbfx2CJ+e1ZScaaBONbZ9Bz8K1DYFOHr5Q5e+KK/8/KWR0Q9kB9AhM1d9EqntCo7iJ/J5YrZmXIKvvepw==",
-      "path": "system.security.claims/4.0.1",
-      "hashPath": "system.security.claims.4.0.1.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Algorithms/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-8JQFxbLVdrtIOKMDN38Fn0GWnqYZw/oMlwOUG/qz1jqChvyZlnUmu+0s7wLx7JYua/nAXoESpHA3iw11QFWhXg==",
-      "path": "system.security.cryptography.algorithms/4.2.0",
-      "hashPath": "system.security.cryptography.algorithms.4.2.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Cng/4.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cUJ2h+ZvONDe28Szw3st5dOHdjndhJzQ2WObDEXAWRPEQBtVItVoxbXM/OEsTthl3cNn2dk2k0I3y45igCQcLw==",
-      "path": "system.security.cryptography.cng/4.2.0",
-      "hashPath": "system.security.cryptography.cng.4.2.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Csp/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/i1Usuo4PgAqgbPNC0NjbO3jPW//BoBlTpcWFD1EHVbidH21y4c1ap5bbEMSGAXjAShhMH4abi/K8fILrnu4BQ==",
-      "path": "system.security.cryptography.csp/4.0.0",
-      "hashPath": "system.security.cryptography.csp.4.0.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Encoding/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
-      "path": "system.security.cryptography.encoding/4.0.0",
-      "hashPath": "system.security.cryptography.encoding.4.0.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.OpenSsl/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HUG/zNUJwEiLkoURDixzkzZdB5yGA5pQhDP93ArOpDPQMteURIGERRNzzoJlmTreLBWr5lkFSjjMSk8ySEpQMw==",
-      "path": "system.security.cryptography.openssl/4.0.0",
-      "hashPath": "system.security.cryptography.openssl.4.0.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Primitives/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Wkd7QryWYjkQclX0bngpntW5HSlMzeJU24UaLJQ7YTfI8ydAVAaU2J+HXLLABOVJlKTVvAeL0Aj39VeTe7L+oA==",
-      "path": "system.security.cryptography.primitives/4.0.0",
-      "hashPath": "system.security.cryptography.primitives.4.0.0.nupkg.sha512"
-    },
     "System.Security.Cryptography.ProtectedData/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-s/MFK8BvgtejZj5a8qAPDXEGBtWkpFX98qwQP/wqVa9CgIC7LrKHxDFdlN5x6afGAb0ZVBVGIZlCdBLnO2QjZw==",
       "path": "system.security.cryptography.protecteddata/4.5.0",
       "hashPath": "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.X509Certificates/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4HEfsQIKAhA1+ApNn729Gi09zh+lYWwyIuViihoMDWp1vQnEkL2ct7mAbhBlLYm+x/L4Rr/pyGge1lIY635e0w==",
-      "path": "system.security.cryptography.x509certificates/4.1.0",
-      "hashPath": "system.security.cryptography.x509certificates.4.1.0.nupkg.sha512"
     },
     "System.Security.Permissions/4.5.0": {
       "type": "package",
@@ -2169,26 +1623,12 @@
       "path": "system.security.permissions/4.5.0",
       "hashPath": "system.security.permissions.4.5.0.nupkg.sha512"
     },
-    "System.Security.Principal/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-On+SKhXY5rzxh/S8wlH1Rm0ogBlu7zyHNxeNBiXauNrhHRXAe9EuX8Yl5IOzLPGU5Z4kLWHMvORDOCG8iu9hww==",
-      "path": "system.security.principal/4.0.1",
-      "hashPath": "system.security.principal.4.0.1.nupkg.sha512"
-    },
     "System.Security.Principal.Windows/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-hs2zF4tOQ3V4iQttVnLrnR/i8AOrrAgu2Gmp4/jNaE/+5hiZWDj20FK/m/OW3Itdi9XDvqf55WzHkiWYtOSUNg==",
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
-    },
-    "System.Security.SecureString/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7TGOnj9Lr8ljCJbMHjZC34hEw3Z+zRPp7eNhLBg22mbSqO8gQMGLJ/vQkWv8HFYG0t2i53ZulKZ8NNho+jVK7Q==",
-      "path": "system.security.securestring/4.0.0",
-      "hashPath": "system.security.securestring.4.0.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

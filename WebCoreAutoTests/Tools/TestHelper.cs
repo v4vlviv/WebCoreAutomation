@@ -5,11 +5,8 @@ using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Firefox;
 using System;
 using OpenQA.Selenium.Remote;
-using AventStack.ExtentReports;
-using AventStack.ExtentReports.Reporter;
 using System.IO;
 using OpenQA.Selenium;
-using NUnit.Framework.Interfaces;
 
 namespace WebCoreAutoTests.Tools
 {
@@ -29,10 +26,6 @@ namespace WebCoreAutoTests.Tools
 
         BrowserType _browserType;
 
-        // Reporting
-        public static ExtentReports extent;
-        public static ExtentTest test;
-
         public TestHelper(BrowserType browserType)
         {
             _browserType = browserType;
@@ -41,12 +34,7 @@ namespace WebCoreAutoTests.Tools
         [OneTimeSetUp]
         protected void OneTimeSetup()
         {
-            var dir = TestContext.CurrentContext.TestDirectory + "\\";
-            var fileName = this.GetType().ToString() + ".html";
-            var htmlReporter = new ExtentHtmlReporter(dir + fileName);
-
-            extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);
+           
         }
 
         [SetUp]
@@ -54,7 +42,6 @@ namespace WebCoreAutoTests.Tools
         {
             Initialization(_browserType);
             driver.Navigate().GoToUrl(URL);
-            test = extent.CreateTest(TestContext.CurrentContext.Test.Name);
         }
 
         [TearDown]
@@ -64,35 +51,12 @@ namespace WebCoreAutoTests.Tools
             {
                 TakeScreenshot();
             }
-            driver.Quit();
         }
 
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            var status = TestContext.CurrentContext.Result.Outcome.Status;
-            var stacktrace = string.IsNullOrEmpty(TestContext.CurrentContext.Result.StackTrace)
-                    ? ""
-                    : string.Format("{0}", TestContext.CurrentContext.Result.StackTrace);
-            Status logstatus;
 
-            switch (status)
-            {
-                case TestStatus.Failed:
-                    logstatus = Status.Fail;
-                    break;
-                case TestStatus.Inconclusive:
-                    logstatus = Status.Warning;
-                    break;
-                case TestStatus.Skipped:
-                    logstatus = Status.Skip;
-                    break;
-                default:
-                    logstatus = Status.Pass;
-                    break;
-            }
-            test.Log(logstatus, "Test ended with " + logstatus + stacktrace);
-            extent.Flush();
         }
 
         public void TakeScreenshot()
